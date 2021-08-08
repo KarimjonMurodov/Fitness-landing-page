@@ -15,12 +15,13 @@
     background: url(/img/home-bg-kvadrat.jpg) no-repeat ;
     background-position: left 20%;
     width: 100%;
-    min-height: 130vh;
+    min-height: 150vh;
     margin: 0 auto;
-    background-color: #fffafb;
+    background-color: var(--main-bg);
     display: flex;
     justify-content: space-between;
     padding-left: 215px;
+    z-index: -22;
 }
 
 
@@ -62,6 +63,7 @@
 .header__main-block{
     width: 100%;
     min-height: 70vh;
+    margin-top: 170px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -131,20 +133,34 @@
 
 
 .header__main-img{
-    /* position: relative; */
-    top: 0;
-    right: 0;
+    z-index: 1;
 }
 
 .header__play-button{
     position: absolute;
     top: 35%;
-    left: 53%;
+    left: 50%;
+    transform: translate(-50 -50);
 
 }
 
 .header__dots{
     position: absolute;
     right: 30px;
-    bottom: 130px;
+    bottom: 80px;
 }
+
+
+.bottom-text-img{
+    position: absolute;
+    bottom: 100px;
+    left: 12%;
+    z-index: -1;
+}
+
+.vector-icon{
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+}
+
