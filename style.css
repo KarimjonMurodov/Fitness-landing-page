@@ -52,6 +52,8 @@
     margin: 0 15px;
     text-decoration: none;
     color: #837171;
+    font-family: var(--font-Alegreya);
+    font-weight: normal;
     font-style: Regular;
     font-size: 24px;
     line-height: 38px;
@@ -60,7 +62,7 @@
 
 .bar-menu a:hover{
     color: var(--text-color);
-    border-bottom: 2px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
     /* transition: all .3s; */
 }
 
@@ -83,6 +85,9 @@
 .header__row h3{
     font-size: 26px;
     color: var(--main-color);
+    font-family: var(--font-JosefinSans);
+    font-weight: 600;
+    font-style: normal;
     margin-right: 15px;
 }
 
@@ -95,10 +100,16 @@
     font-size: 80px;
     line-height: 88px;
     color: var(--text-color);
+    font-family: var(--font-JosefinSans);
+    font-weight: bold;
+    font-style: normal;
     margin: 40px 0;
 }
 
 .header__main-block p{
+    font-family: var(--font-Alegreya);
+    font-style: normal;
+    font-weight: normal;
     font-size: 22px;
     line-height: 35px;
     color: var(--text-color);
@@ -106,6 +117,9 @@
 }
 
 .header__row button{
+    font-family: var(--font-Alegreya);
+    font-style: normal;
+    font-weight: normal;
     font-size: 22px;
     line-height: 35px;
     color: var(--text-color);
@@ -137,6 +151,8 @@
 
 
 .header__main-img{
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -159,7 +175,7 @@
     position: absolute;
     bottom: 100px;
     left: 12%;
-    z-index: -1;
+    z-index: 2;
 }
 
 .vector-icon{
@@ -168,16 +184,16 @@
     left: 60px;
 }
 
-#training{
+.training__services{
     width: 100%;
-    height: 600px;
+    height: 700px;
     background-color: var(--main-bg);
     padding-top:10px;
 }
 
 .training__sub-text{
     text-align: center;
-    font-family: Josefin Sans;
+    font-family: var(--font-JosefinSans);
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -187,7 +203,7 @@
 
 .training__main-title{
     text-align: center;
-    font-family: Josefin Sans;
+    font-family: var(--font-JosefinSans);
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
@@ -230,7 +246,7 @@
 }
 
 .training__box h4{
-    font-family: Alegreya;
+    font-family: var(--font-Alegreya);
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -244,7 +260,7 @@
 
 .training__box a{
     text-decoration: none;
-    font-family: Alegreya;
+    font-family: var(--font-Alegreya);
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -258,7 +274,127 @@
 
 .box__slide{
     display: flex;
+    align-items: center;
     position: absolute;
     bottom: 0;
     right: 215px;
 }
+
+.slide__left{
+    width: 13.08px;
+    height: 7.36px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.slide__right{
+    width: 29.39px;
+    height: 16.54px;
+    cursor: pointer;
+}
+
+.training__services__body{
+    width: 100%;
+    height: 250vh;
+    background-color: var(--main-bg);
+}
+
+.services__body__itimes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px;
+    
+}
+
+.body__itime__img{
+    position: relative;
+    max-width: 566px;
+    max-height: 667px;
+}
+
+.itime__img-top{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px 2px 100px 2px;
+}
+
+.itime__dots-top{
+    position: absolute;
+    top: -37px;
+    left: -37px;
+}
+
+.body__itime__title{
+    max-width: 400px;
+}
+
+.itime__sub-title{
+    font-family: var(--font-JosefinSans);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 160%;
+    /* identical to box height, or 42px */
+    color: var(--main-color);
+    margin-top: 70px;
+}
+
+.itime__main-title{
+    font-family: var(--font-JosefinSans);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+
+    color: var(--text-color);
+    margin: 28px 0;
+}
+
+.body__itime__title p{
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 160%;
+    /* or 35px */
+    color: var(--text-color);
+}
+
+.body__itime__title button{
+    width: 200px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: var(--main-color);
+    font-family: var(--font-Alegreya);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 160%;
+    /* or 35px */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.body__itime__img-down{
+    position: relative;
+    max-width: 566px;
+    max-height: 667px;
+}
+
+.img__radius{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 2px 2px 2px;
+}
+
+.itime__dots-bottom{
+    position: absolute;
+    right: -37px;
+    bottom: -38px;
+}
+
+
