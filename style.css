@@ -227,7 +227,6 @@
     height: 282px;
     background: #FFFFFF;
     border: 0.5px solid #E1E1E1;
-    box-sizing: border-box;
     border-radius: 5px 5px 5px 35px;
     padding: 55px;
     display: flex;
@@ -236,8 +235,8 @@
     flex-direction: column;
 }
 
-.training__box:hover, a{
-    height: 332px;
+.training__box:hover{
+    
 }
 
 .training__box img{
@@ -295,7 +294,7 @@
 
 .training__services__body{
     width: 100%;
-    height: 250vh;
+    height: 230vh;
     background-color: var(--main-bg);
 }
 
@@ -337,7 +336,7 @@
     line-height: 160%;
     /* identical to box height, or 42px */
     color: var(--main-color);
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 .itime__main-title{
@@ -379,6 +378,12 @@
     margin-top: 20px;
 }
 
+.body__itime__title button:hover{
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    color: var(--text-color);
+}
+
 .body__itime__img-down{
     position: relative;
     max-width: 566px;
@@ -397,4 +402,145 @@
     bottom: -38px;
 }
 
+.training__instructors__box{
+    width: 100%;
+    height: 700px;
+    background-color: var(--main-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 250px;
+}
 
+.training__instructors__box .itime__sub-title{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.instructor__box{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.box__itime h5{
+    text-align: center;
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--text-color);
+}
+
+.box__itime p{
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    /* identical to box height, or 32px */
+
+    text-align: center;
+    color: var(--text-color);
+}
+
+.training__testimonial{
+    width: 100%;
+    height: 800px;
+    background-color: var(--main-bg);
+    padding-top: 50px;
+    display: flex;
+    padding: 0 150px;
+}
+
+.testimonial__img{
+    max-width: 500px;
+    max-height: 719px;
+}
+
+.testimonial__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial__title{
+    position: relative;
+    max-width: 500px;
+    max-height: 700px;
+    padding: 0 50px;
+}
+
+.testimonial__title h5{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 160%;
+    /* identical to box height, or 42px */
+    color: var(--main-color);
+}
+
+.testimonial__title h1{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    color: var(--text-color);
+    margin: 28px 0 60px 0;
+}
+
+.testimonial__commit-itime{
+    position: absolute;
+    bottom: 40px;
+    left: -50px;
+    width: 624px;
+    height: 426px;
+    background: #FFFFFF;
+    border-radius: 2px 100px 2px 2px;
+    padding: 60px;
+    z-index: 2;
+    box-shadow: 3px 27px 47px -3px rgba(240,194,194,0.75);
+}
+
+.testimonial__commit-itime p{
+    font-family: Josefin Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 160%;
+    /* or 35px */
+    color: var(--text-color);
+}
+
+.testimonial__commit-itime h4{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    /* or 31px */
+    color: var(--text-color);
+    margin: 39px 0 8px 0;
+}
+
+.testimonial__commit-itime h5{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    color: var(--text-color);
+}
+
+.testimonial__dots{
+    position: absolute;
+    bottom: -30px;
+    right: -135px;
+}
