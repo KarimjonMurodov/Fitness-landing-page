@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Josefin+Sans:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Josefin+Sans:wght@100;200;300;400;500&family=Lato:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -543,4 +543,186 @@
     position: absolute;
     bottom: -30px;
     right: -135px;
+}
+
+.contact__email{
+    width: 100%;
+    height: 500px;
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact__email h1{
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact__email p{
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 160%;
+    /* or 35px */
+
+    text-align: center;
+    margin: 24px 0 36px 0;
+}
+
+.contact__email__input{
+    width: 632px;
+    height: 76px;
+    background-color: #FFFFFF;
+    border-radius: 36.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 12px 37px 40px -11px rgba(243,160,160,0.82);
+}
+
+.contact__email__input input{
+    width: 205px;
+    height: 32px;
+    margin-left: 79px;
+    border: none;
+    outline: none;
+
+}
+
+.contact__email__input input::placeholder{
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    /* identical to box height, or 32px */
+
+    color: #9B9DAC;
+}
+
+.contact__email__input button{
+    width: 170px;
+    height: 58px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 7px;
+    background-color: var(--main-color);
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 160%;
+    /* identical to box height, or 32px */
+
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.contact__email__input button:hover{
+    background-color: rgb(210,25,45);
+}
+
+
+.fitness__footer__page{
+    position: relative;
+    width: 100%;
+    height: 440px;
+    background: rgba(255, 243, 244, 0.9);
+    padding: 85px 200px;
+    display: flex;
+
+}
+
+.footer__title{
+    width: 30%;
+}
+
+.footer__title p{
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    /* or 155% */
+
+    letter-spacing: -0.02em;
+    color: var(--text-color);
+    margin: 33px 0 26px 0;
+}
+
+.footer__icons{
+    display: flex;
+    list-style-type: none;
+}
+
+.footer__icon i{
+    width: 44.76px;
+    height: 44.76px;
+    border-radius: 50%;
+    margin-right: 13.53px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+}
+
+
+.footer__icon i:hover{
+    background-color: var(--main-color);
+    color: #FFFFFF;
+}
+
+.footer__nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__navbar li{
+    list-style-type: none;
+    margin-bottom: 18px;
+}
+
+.footer__navbar li a{
+    text-decoration: none;
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    color: #504747;
+}
+
+.footer__navbar .navbar__main-title a{
+    font-family: Josefin Sans;
+    color: #3A1212;
+}
+
+.footer__navbar .navbar__main-title{
+    margin-bottom: 39px;
+}
+
+.footer__bootom__title{
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translate(-50%);
+    font-style: normal;
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+
+    color: #A69B9B;
 }
