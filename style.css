@@ -66,6 +66,61 @@
     /* transition: all .3s; */
 }
 
+.hamburger{
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid var(--main-color); */
+}
+
+.hamburger__btn{
+    width: 50px;
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.hamburger__btn::before,
+.hamburger__btn::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.hamburger__btn::before{
+    transform: translateY(-16px);
+}
+
+.hamburger__btn::after{
+    transform: translateY(16px);
+}
+
+.hamburger:active .hamburger__btn{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.hamburger:active .hamburger__btn::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.hamburger:active .hamburger__btn::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
 .header__main-block{
     width: 100%;
     min-height: 70vh;
@@ -154,6 +209,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    object-fit: cover;
 }
 
 .header__play-button{
@@ -186,7 +242,7 @@
 
 .training__services{
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     background-color: var(--main-bg);
     padding-top:10px;
 }
@@ -214,7 +270,7 @@
 
 .training__boxs{
     width: 100%;
-    height: 370px;
+    min-height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,7 +350,7 @@
 
 .training__services__body{
     width: 100%;
-    height: 230vh;
+    min-height: 230vh;
     background-color: var(--main-bg);
 }
 
@@ -316,6 +372,7 @@
     width: 100%;
     height: 100%;
     border-radius: 2px 2px 100px 2px;
+    object-fit: cover;
 }
 
 .itime__dots-top{
@@ -325,7 +382,7 @@
 }
 
 .body__itime__title{
-    max-width: 400px;
+    width: 400px;
 }
 
 .itime__sub-title{
@@ -394,6 +451,7 @@
     width: 100%;
     height: 100%;
     border-radius: 100px 2px 2px 2px;
+    object-fit: cover;
 }
 
 .itime__dots-bottom{
@@ -404,7 +462,7 @@
 
 .training__instructors__box{
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     background-color: var(--main-bg);
     display: flex;
     justify-content: center;
@@ -423,6 +481,7 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -450,7 +509,7 @@
 
 .training__testimonial{
     width: 100%;
-    height: 800px;
+    min-height: 800px;
     background-color: var(--main-bg);
     padding-top: 50px;
     display: flex;
@@ -465,6 +524,7 @@
 .testimonial__img img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .testimonial__title{
@@ -547,7 +607,7 @@
 
 .contact__email{
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     background-color: var(--main-bg);
     display: flex;
     align-items: center;
@@ -636,7 +696,7 @@
 .fitness__footer__page{
     position: relative;
     width: 100%;
-    height: 440px;
+    min-height: 440px;
     background: rgba(255, 243, 244, 0.9);
     padding: 85px 200px;
     display: flex;
@@ -725,4 +785,191 @@
     /* or 14px */
 
     color: #A69B9B;
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .hamburger{
+        display: flex;
+    }
+    .header__container{
+        padding: 50px;
+    }
+
+    .bar-menu{
+        display: none;
+    }
+
+    .header__home-title{
+        width: 100%;
+    }
+    
+    .header__main-title{
+        font-size: 60px;
+        
+    }
+
+    .training__boxs{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .body__itime__img-down, .itime__img-top{
+        display: none;
+    }
+
+    .itime__dots-top, .itime__dots-down{
+        display: none;
+    }
+
+
+    .bottom-text-img{
+        display: none;
+    }
+
+    .header__home-img{
+        display: none;
+    }
+
+    .header__main-block{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 920px) {
+    .testimonial__dots, .testimonial__img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .header__home-img{
+        display: none;
+    }
+
+    .body__itime__title{
+        width: 100%;
+        height: auto;
+    }
+
+    .services__body__itimes{
+        padding: 100px 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .testimonial__commit-itime{
+        width: auto;
+        height: auto;
+        position: unset;
+    }
+
+    .testimonial__commit-itime{
+        display: none;
+    }
+
+    #contact > *{
+        width: auto;
+    }
+
+    #contact{
+        padding: 0 10px;
+    }
+
+    .fitness__footer__page{
+        padding: 80px 50px;
+
+    }
+
+
+}
+
+@media screen and (max-width:668px) {
+    .contact__email__input{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:481px) {
+
+    .header__row{
+        flex-wrap: wrap;
+    }
+
+    .header__row button{
+        margin: 10px 0;
+    }
+
+    .training__box{
+        margin: 7px 0;
+    }
+
+    .box__slide{
+        bottom: -20px;
+        right: 40px;
+    }
+
+    .training__instructors__box{
+        padding: 0 20px;
+    }
+
+    .training__testimonial{
+        padding: 30px 20px;
+    }
+
+    .body__itime__title{
+        padding: 0 20px;
+    }
+
+    .body__itime__title button{
+        align-items: center;
+    }
+    .itime__sub-title, .itime__main-title{
+        text-align: center;
+    }
+
+    .itime__main-title{
+        font-size: 30px;
+    }
+
+    .training__main-title{
+        font-size: 35px;
+    }
+
+    .testimonial__commit-itime{
+        display: none;
+    }
+
+    .contact__email__input{
+        flex-direction: column;
+    }
+
+    .contact__email__input > *{
+        width: auto;
+    }
+
+    .contact__email__input input{
+        margin: 10px;
+    }
+
+    .fitness__footer__page{
+        padding-top: 80px;
+        padding: 0 20px;
+
+        flex-direction: column;
+    }
+
+    .footer__nav{
+        flex-direction: column;
+        margin:50px 0 100px 0;
+    }
+
 }
