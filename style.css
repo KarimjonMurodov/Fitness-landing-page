@@ -793,25 +793,34 @@
 
 @media screen and (max-width: 1024px) {
 
-    .hamburger{
+    /* .hamburger{
         display: flex;
-    }
+    } */
     .header__container{
         padding: 50px;
     }
 
-    .bar-menu{
-        display: none;
+    .header__main-block{
+        margin-top: 70px;
     }
+
+    /* .bar-menu{
+        display: none;
+    } */
 
     .header__home-title{
         width: 100%;
     }
     
     .header__main-title{
-        font-size: 60px;
+        font-size: 48px;
         
     }
+
+    .header__main-block p{
+        font-size: 18px;
+    }
+
 
     .training__boxs{
         /* flex-direction: column; */
@@ -839,6 +848,14 @@
         width: 100%;
     }
 
+    .training__box{
+        margin: 10px 20px;
+    }
+
+    .training__main-title{
+        font-size: 40px;
+    }
+
 
 }
 
@@ -847,22 +864,52 @@
         display: none;
     }
 
-}
-
-@media screen and (max-width:768px) {
-    .header__home-img{
-        display: none;
+    .services__body__itimes{
+        padding: 60px 30px;
     }
 
     .body__itime__title{
         width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .hamburger{
+        display: flex;
+    }
+
+    .bar-menu{
+        display: none;
+    }
+
+    .header__home-img{
+        display: none;
+    }
+
+    .header__row .header__btn{
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* .header__main-block{
+        margin-top: 70px;
+    } */
+
+    .body__itime__title{
         height: auto;
+        padding: 0 30px;
+
+        /* background-color: red; */
     }
 
     .services__body__itimes{
-        padding: 100px 0;
+        /* padding: 60px 30px; */
         justify-content: center;
         width: 100%;
+        flex: 1;
     }
 
     .testimonial__commit-itime{
@@ -872,7 +919,11 @@
     }
 
     .testimonial__commit-itime{
-        display: none;
+        /* display: none; */
+    }
+
+    .training__testimonial{
+        padding: 0 20px;
     }
 
     #contact > *{
